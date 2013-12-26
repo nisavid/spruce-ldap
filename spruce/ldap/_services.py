@@ -8,9 +8,9 @@ import os as _os
 import re as _re
 import signal as _signal
 
-from nisavid.lang import bool as _bool, enum as _enum, int as _int
 import ldap as _ldap
 import psutil as _ps
+from spruce.lang import bool as _bool, enum as _enum, int as _int
 
 from . import _exc
 
@@ -41,7 +41,7 @@ class Service(object):
     ============ ================= =================================================
 
     .. |OpenLdapService| replace::
-        :class:`~nisavid.ldap.openldap._services.OpenLdapService`
+        :class:`~spruce.ldap.openldap._services.OpenLdapService`
 
     .. seealso:: :class:`ServiceImpl`
 

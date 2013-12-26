@@ -13,18 +13,27 @@ from setuptools import find_packages as _find_packages, setup as _setup
 
 NAME_NOPREFIX = 'ldap'
 
-NAME = 'nisavid-' + NAME_NOPREFIX
+NAME = 'Spruce-' + NAME_NOPREFIX
 
-VERSION = '0'
+VERSION = '0.1.0'
 
 SITE_URI = ''
 
-DESCRIPTION = 'Directory service interaction via LDAP.'
+DESCRIPTION = 'Directory service interaction via LDAP'
 
-LONG_DESCRIPTION = DESCRIPTION + '''
-'''
+README_FILE = 'README.rst'
+with open(README_FILE, 'r') as _file:
+    README = _file.read()
 
-LICENSE = 'LGPLv3'
+CHANGES_FILE = 'CHANGES.rst'
+with open(CHANGES_FILE, 'r') as _file:
+    CHANGES = _file.read()
+
+LICENSE_FILE = 'LICENSE'
+with open(LICENSE_FILE, 'r') as _file:
+    LICENSE = _file.read()
+
+LONG_DESCRIPTION = '\n\n'.join((README, CHANGES))
 
 TROVE_CLASSIFIERS = \
     ('Development Status :: 5 - Production/Stable',
@@ -41,7 +50,7 @@ TROVE_CLASSIFIERS = \
 
 SETUP_DEPS = ()
 
-INSTALL_DEPS = ('nisavid-lang', 'nisavid-pprint', 'psutil', 'python-ldap')
+INSTALL_DEPS = ('psutil', 'python-ldap', 'spruce-lang', 'spruce-pprint')
 
 EXTRAS_DEPS = {'openldap': ()}
 
@@ -52,7 +61,7 @@ DEPS_SEARCH_URIS = ()
 
 # packages --------------------------------------------------------------------
 
-PARENT_NAMESPACE_PKG = 'nisavid'
+PARENT_NAMESPACE_PKG = 'spruce'
 
 ROOT_PKG = '.'.join((PARENT_NAMESPACE_PKG, NAME_NOPREFIX))
 

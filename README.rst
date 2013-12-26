@@ -1,6 +1,6 @@
+###########
+Spruce-ldap
+###########
 
-############
-nisavid-ldap
-############
-
-Directory service interaction via LDAP.
+Spruce-ldap is a Python library for directory service interaction via
+LDAP.

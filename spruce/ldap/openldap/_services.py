@@ -14,8 +14,8 @@ import sys as _sys
 from tempfile import NamedTemporaryFile as _NamedTemporaryFile
 from time import sleep as _sleep, time as _time
 
-from nisavid.pprint import indented as _indented
 import ldap as _ldap
+from spruce.pprint import indented as _indented
 
 from .. import _services
 

@@ -14,7 +14,7 @@ import subprocess as _subprocess
 import pkg_resources as _pkg_resources
 
 try:
-    _pkg_resources.require('nisavid-ldap [openldap]')
+    _pkg_resources.require('spruce-ldap [openldap]')
 except _pkg_resources.ResolutionError:
     pass
 else:

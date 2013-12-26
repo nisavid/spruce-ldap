@@ -9,8 +9,8 @@ import shutil as _sh
 from tempfile import mkdtemp as _mkdtemp
 import unittest as _unittest
 
-import nisavid.ldap as _ldap
-import nisavid.ldap.openldap as _openldap
+import spruce.ldap as _ldap
+import spruce.ldap.openldap as _openldap
 
 from . import _users as _test_users
 
