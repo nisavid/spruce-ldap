@@ -15,7 +15,7 @@ NAME_NOPREFIX = 'ldap'
 
 NAME = 'Spruce-' + NAME_NOPREFIX
 
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 SITE_URI = ''
 
